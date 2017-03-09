@@ -1,0 +1,4 @@
+application.properties中 
+增加如下配置：
+#修改内置tomcat端口号
+server.port=8081

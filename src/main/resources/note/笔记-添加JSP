@@ -1,0 +1,22 @@
+添加JSP
+1.导入依赖，注意需要jasper，否则回报404错误
+   		<dependency>
+			<groupId>org.apache.tomcat.embed</groupId>
+			<artifactId>tomcat-embed-jasper</artifactId>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>jstl</artifactId>
+		</dependency>
+		
+2.application.properties中添加JSP支持
+spring.mvc.view.prefix=/WEB-INF/jsp/
+# 响应页面默认后缀
+spring.mvc.view.suffix=.jsp
+# 自定义属性，可以在Controller中读取
+application.hello=Hello Angel From application
+
+3.编写Controller  注意注解为Contoller，RestController返回字符串
+
+4.编写JSP页面
